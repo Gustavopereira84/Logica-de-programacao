@@ -1,0 +1,31 @@
+//Entrar com dois números reais e imprimir a média aritmética com a mensagem : MÉDIA:  
+//antes do resultado. 
+#include <stdio.h>
+
+int main(){
+	
+	float num_digitado, soma, media;
+	int contador;
+	
+	printf("Escolha um numero: \n");
+	scanf("%f", &num_digitado);
+	soma = 0;
+	contador = 0;
+		
+	while (num_digitado != 0) {
+		soma = soma + num_digitado;
+		contador = contador + 1; // ou poderia ser assim : "contador += 1;" "contador++;" 
+		
+		printf("Escolha outro numero:(caso tenho acabado escolher digite 0)\n");
+		scanf("%f", &num_digitado);
+			
+	}
+	if (contador > 0) {
+	media = soma / contador;
+	printf("MEDIA: %.2f", media);
+}
+	
+	
+	
+	return 0;
+}
