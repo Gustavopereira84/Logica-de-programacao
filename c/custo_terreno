@@ -1,0 +1,28 @@
+#include <stdio.h>
+//algoritmo para ler as dimensões de um terreno (comprimento c e largura l), bem 
+//como o preço do metro do arame p, então fornecer como saída o custo para cercar este 
+//mesmo terreno. 
+
+
+int main(){
+	
+	float comprimento, largura, perimetro, preco, custo;
+	
+	printf("digite o comprimento: \n");
+	scanf("%f", &comprimento);
+	
+	printf("digite a largura: \n");
+	scanf("%f", &largura);
+	
+	printf("digite o preco do arame por metro: \n");
+	scanf("%f", &preco);
+	
+
+	perimetro = (comprimento + comprimento) + (largura + largura);
+	custo = perimetro * preco;
+	
+	printf("Custo para cercar este terreno e igual a: %.2f\n", custo);
+	
+	
+	return 0;
+}
