@@ -1,0 +1,18 @@
+#include <stdio.h>
+//Entrar com valores de a e b e imprimir o valor numérico da expressão: a3 + b2 +5. 
+
+int main(){
+	
+	int a;
+	int b; 
+	
+	printf("digite um numero: \n");
+	scanf("%d", &a);
+	printf("digite um numero: \n");
+	scanf("%d", &b);
+	
+	int resultado = (a * 3) + (b * 2) + 5;
+	printf("resultado: %d\n", resultado); 
+	
+	return 0;
+}
