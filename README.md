@@ -1,2 +1,3 @@
-# L-gica-de-programa-o
+# Logica-de-programacao
 Exercícios de lógica de programação em C
+
