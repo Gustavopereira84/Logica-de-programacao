@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main(){
+	float salario = 2000;
+	int tempo = 0;
+	float aumento = 0.1;
+	
+	while (salario < 10000){
+		salario = salario * (1 + aumento);
+		tempo++;
+	}
+	
+	printf("salario chegara em 10000 em %d anos \n", tempo);
+	
+	return 0;
+}
