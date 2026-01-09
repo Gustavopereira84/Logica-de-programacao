@@ -1,0 +1,25 @@
+//Entrar com quatro números e respectivos pesos. Imprimir a média ponderada.
+//formula da media ponderada: MP= (V1*P)+(V2*P2)+...(Vn*Pn)/P1+P2+...PN
+
+#include <stdio.h>
+int main(){
+	double valor, peso;
+	double somap = 0;
+	double somav = 0;
+	double resultado;
+	
+	for(int i = 0; i < 4; i++){
+		printf("Digite o valor: \n");
+		scanf("%lf", &valor);
+		printf("Digite o peso: \n");
+		scanf("%lf", &peso);
+		
+		somav = somav + (valor * peso);
+		somap = somap + peso;
+	}
+	
+	resultado = somav / somap;
+	printf("Media ponderada igual a : %.1lf", resultado);
+	
+	return 0;
+}
